@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktiere IM-Services - wir freuen uns auf deine Nachricht.">
+    <title>Kontakt - IM-Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo-link">
+                    <img src="logo.svg" alt="IM-Services Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-name">IM-Services</span>
+                        <span class="logo-tagline">Schüler & Eltern</span>
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Start</a></li>
+                    <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                    <li><a href="faecher.html" class="nav-link">Fächer</a></li>
+                    <li><a href="preise.html" class="nav-link">Preise</a></li>
+                    <li><a href="buchung.html" class="nav-link">Buchung</a></li>
+                    <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-label">Kontakt</span>
+                <h1 class="page-title">Kontaktiere uns</h1>
+                <p class="page-subtitle">Hast du Fragen? Wir freuen uns auf deine Nachricht!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-page">
+                    <h2>Lass uns in Kontakt treten</h2>
+                    <p>Hast du Fragen oder möchtest du mehr über unsere Nachhilfe erfahren? Wir sind für dich da und beantworten gerne alle deine Fragen.</p>
+                    
+                    <div class="contact-details-page">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="detail-content">
+                                <h3>E-Mail</h3>
+                                <a href="mailto:info@im-services.de">info@im-services.de</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="detail-content">
+                                <h3>Standort</h3>
+                                <p>Gießen, gegenüber der Galerie</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder-page">
+                        <div class="map-content">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4C16.27 4 10 10.27 10 18C10 28 24 44 24 44C24 44 38 28 38 18C38 10.27 31.73 4 24 4Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <p>Karte wird hier eingebettet</p>
+                            <span class="map-note">(Platzhalter für Google Maps oder ähnliche Karte)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form-page" action="https://formsubmit.co/sunguralperenyavuz@icloud.com" method="POST">
+                    <!-- FormSubmit versteckte Felder -->
+                    <input type="hidden" name="_subject" id="contactSubjectHidden">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="kontakt.html?success=true">
+                    
+                    <h3>Nachricht senden</h3>
+                    <div class="form-group">
+                        <label for="contactName">Name *</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">E-Mail-Adresse *</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Betreff</label>
+                        <input type="text" id="contactSubject" name="contactSubject">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Nachricht *</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="6" required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="contactPrivacy" name="contactPrivacy" required>
+                        <label for="contactPrivacy">Ich habe die Datenschutzerklärung gelesen und akzeptiere sie. *</label>
+                    </div>
+                    <button type="submit" class="submit-button-page">
+                        <span>Nachricht senden</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 10L18 2L12 18L10 10L2 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            
+            <div id="contactSuccess" class="contact-success-page" style="display: none;">
+                <div class="success-icon-page">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="32" fill="currentColor"/>
+                        <path d="M20 32L28 40L44 24" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Nachricht gesendet!</h3>
+                <p>Vielen Dank für deine Nachricht. Wir werden uns schnellstmöglich bei dir melden.</p>
+                <a href="index.html" class="cta-button secondary">Zur Startseite</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="IM-Services Logo" class="footer-logo">
+                    <p class="footer-tagline">Nachhilfe von Schülern – für Schüler</p>
+                    <p class="footer-description">Vertrauenswürdig, modern, freundlich und professionell.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Start</a></li>
+                            <li><a href="ueber-uns.html">Über uns</a></li>
+                            <li><a href="faecher.html">Fächer</a></li>
+                            <li><a href="preise.html">Preise</a></li>
+                            <li><a href="buchung.html">Buchung</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a href="mailto:info@im-services.de">info@im-services.de</a></li>
+                            <li>Gießen, gegenüber der Galerie</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Rechtliches</h4>
+                        <ul>
+                            <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="datenschutz.html">Datenschutz</a></li>
+                            <li><a href="agb.html">AGB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IM-Services. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

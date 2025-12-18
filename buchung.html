@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buche jetzt deine Nachhilfestunde bei IM-Services online.">
+    <title>Buchung - IM-Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo-link">
+                    <img src="logo.svg" alt="IM-Services Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-name">IM-Services</span>
+                        <span class="logo-tagline">Schüler & Eltern</span>
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Start</a></li>
+                    <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                    <li><a href="faecher.html" class="nav-link">Fächer</a></li>
+                    <li><a href="preise.html" class="nav-link">Preise</a></li>
+                    <li><a href="buchung.html" class="nav-link active">Buchung</a></li>
+                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-label">Buchung</span>
+                <h1 class="page-title">Nachhilfe buchen</h1>
+                <p class="page-subtitle">Einfach und schnell – buche deine Nachhilfestunde online</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-page">
+        <div class="container">
+            <div class="booking-wrapper">
+                <form id="bookingForm" class="booking-form-page" action="https://formsubmit.co/sunguralperenyavuz@icloud.com" method="POST">
+                    <!-- FormSubmit versteckte Felder -->
+                    <input type="hidden" name="_subject" value="Neue Buchungsanfrage von IM-Services">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="buchung.html?success=true">
+                    
+                    <div class="form-section">
+                        <h3 class="form-section-title">Art der Nachhilfe</h3>
+                        <div class="form-group">
+                            <label for="lessonType">Art der Nachhilfe *</label>
+                            <select id="lessonType" name="lessonType" required>
+                                <option value="">Bitte wählen</option>
+                                <option value="individual">Einzelstunde (25€)</option>
+                                <option value="group">Gruppenstunde (15€ pro Person)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="form-section-title">Fach & Klassenstufe</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="subject">Fach *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option value="deutsch">Deutsch</option>
+                                    <option value="englisch">Englisch</option>
+                                    <option value="mathematik">Mathematik</option>
+                                    <option value="geschichte">Geschichte</option>
+                                    <option value="powi">Politik & Wirtschaft</option>
+                                    <option value="tuerkisch">Türkisch</option>
+                                    <option value="spanisch">Spanisch</option>
+                                    <option value="informatik">Informatik</option>
+                                    <option value="chemie">Chemie</option>
+                                    <option value="biologie">Biologie</option>
+                                    <option value="andere">Andere Fächer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="grade">Klassenstufe *</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option value="1-4">Klasse 1-4</option>
+                                    <option value="5-6">Klasse 5-6</option>
+                                    <option value="7-8">Klasse 7-8</option>
+                                    <option value="9-10">Klasse 9-10</option>
+                                    <option value="11-13">Klasse 11-13</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="form-section-title">Termin</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferredDate">Wunschtermin *</label>
+                                <input type="date" id="preferredDate" name="preferredDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredTime">Wunschuhrzeit *</label>
+                                <input type="time" id="preferredTime" name="preferredTime" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="form-section-title">Kontaktdaten</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentName">Name des Schülers/der Schülerin *</label>
+                                <input type="text" id="studentName" name="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parentName">Name der Eltern (falls zutreffend)</label>
+                                <input type="text" id="parentName" name="parentName">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail-Adresse *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefonnummer</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="form-section-title">Weitere Informationen</h3>
+                        <div class="form-group">
+                            <label for="message">Weitere Informationen (optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Z. B. spezielle Themen, die behandelt werden sollen..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Ich habe die Datenschutzerklärung gelesen und akzeptiere sie. *</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button-page">
+                        <span>Buchung absenden</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div id="bookingSuccess" class="booking-success-page" style="display: none;">
+                    <div class="success-icon-page">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="32" fill="currentColor"/>
+                            <path d="M20 32L28 40L44 24" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Buchung erfolgreich!</h3>
+                    <p>Vielen Dank für deine Buchung. Wir haben deine Anfrage erhalten und werden uns in Kürze per E-Mail bei dir melden.</p>
+                    <p class="success-note">Hinweis: Dies ist eine Demo-Version. In der finalen Version wird eine Bestätigungs-E-Mail versendet.</p>
+                    <a href="index.html" class="cta-button secondary">Zur Startseite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="IM-Services Logo" class="footer-logo">
+                    <p class="footer-tagline">Nachhilfe von Schülern – für Schüler</p>
+                    <p class="footer-description">Vertrauenswürdig, modern, freundlich und professionell.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Start</a></li>
+                            <li><a href="ueber-uns.html">Über uns</a></li>
+                            <li><a href="faecher.html">Fächer</a></li>
+                            <li><a href="preise.html">Preise</a></li>
+                            <li><a href="buchung.html">Buchung</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a href="mailto:info@im-services.de">info@im-services.de</a></li>
+                            <li>Gießen, gegenüber der Galerie</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Rechtliches</h4>
+                        <ul>
+                            <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="datenschutz.html">Datenschutz</a></li>
+                            <li><a href="agb.html">AGB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IM-Services. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
